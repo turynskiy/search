@@ -6,13 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent{
+  searchStr2 = '';
   searchStr = '';
   onSelect;
+
   onSearch(){
     if (this.searchStr === '' || this.searchStr === ''){
       window.open('/error');
     } else {
-      window.open(this.onSelect + this.searchStr);
+      this.searchStr2 = this.searchStr.replace('&', '%26');
+      window.open(this.onSelect + this.searchStr2);
     }
   }
 }
