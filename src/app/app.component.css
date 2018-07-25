@@ -1,0 +1,33 @@
+
+.container{
+  padding-top: 40px;
+  float: left;
+  margin: 5px;
+
+}
+a{
+  background-color: darkgray;
+  border: 2px solid gray;
+  margin: 10px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-right: 25px;
+  font-size: small;
+
+}
+
+
+select{
+  margin: 5px;
+  border: 2px solid gray;
+  height: 35px;
+  color: black;
+
+
+}
+input{
+  margin: 10px;
+  border: 2px solid gray;
+  height: 30px;
+  width: 500px;
+}

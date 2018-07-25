@@ -1,0 +1,21 @@
+<div class = "container">
+  <router-outlet></router-outlet>
+
+  <div class="row">
+      <input class="input" placeholder="Введите текст для поиска" required type="text" [(ngModel)] = searchStr>
+
+      <select class="list" [(ngModel)]= onSelect>
+        <option value="" disabled selected hidden>Укажите поисковую систему</option>
+        <option value="http://www.google.com/search?q=">google.com</option>
+        <option value="http://www.bing.com/search?q=">bing.com</option>
+        <option value="http://www.search.ask.com/web?q=">ask.com </option>
+      </select>
+
+      <a class="button" (click)="onSearch()">Искать</a>
+
+  </div>
+
+
+</div>
+
+
